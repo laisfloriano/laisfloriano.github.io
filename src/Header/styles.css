@@ -1,0 +1,37 @@
+.navbar {
+    background-color: #121212;
+    font-family: 'Roboto';
+    border-bottom: 1px solid #AAA;
+}
+
+span div a {
+    color: #F8EBFF;
+    margin: 4px 20px;
+    font-size: 20px;
+}
+
+span div a::after {
+    content: "";
+    display: block;
+    margin-top: 5px;
+    border-bottom: 2px solid #8E00FE;
+    /* border-bottom: 2px solid rgb(255, 0, 221); */
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+span div a:hover::after {
+    color: #F8EBFF;
+    transform: scaleX(1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #F8EBFF;
+}
+
+button.navbar-toggler,
+button.navbar-toggler:hover {
+    background-color: #121212;
+    border: 0;
+    margin: 0;
+}
